@@ -1,0 +1,43 @@
+body {
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.navbar {
+	height: 75px;
+	line-height: 60px;
+}
+
+#title {
+	display: block;
+	margin: auto;
+	font-size: 25pt;
+	font-weight: 800;
+}
+
+#title:hover {
+	color: #515151;
+	transition: 0.5s;
+}
+
+.notebook-title {
+	font-weight: 800;
+	text-align: center;
+	font-size: 13pt;
+	width: 300px;
+	text-align: center;
+	margin: auto;
+	line-height: normal;
+	padding-bottom: 10px;
+}
+
+.notebook-image {
+	width: 350px;
+	border: 1px solid #abb3c6;
+	margin: auto;
+	display: block;
+}
+
+.notebook-image:hover {
+	opacity: 0.5;
+	transition: 0.5s;
+}
