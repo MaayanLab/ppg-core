@@ -5,31 +5,54 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>PPG Bioinformatics Core</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-faded">
+    <nav class="navbar navbar-light">
         <div class="container text-center">
-	        <div id="title">PPG Bioinformatics Core</div>
+	        <div id="title">Pathogenesis of HIV-Associated Nephropathy</div>
+	        <hr class="my-2" width="75%">
+	        <div id="subtitle">April 24<sup>th</sup> PPG Meeting - Bioinformatics Core</div>
         </div>
     </nav>
     <div id="main-container" class="container-fluid">
     	<div class="container">
-	    	<div class="row">
+	    	<div id="introduction-row" class="row">
+		    	<div class="col-md-12 text-center">
+			    	<div class="h4">Jupyter Notebooks</div>
+			    	<hr class="my-2" width="30%">
+			    	<div id="intro-text">The images below link to two Jupyter notebooks illustrating the analyses presented at the April 24<sup>th</sup> PPG meeting by the Mount Sinai Bioinformatics Core.  A link to the full presentation is available <a href="https://drive.google.com/open?id=0B46LT_Hxo_TtZ0JlbFZnXzk5U28">here</a>.</div>
+		    	</div>
 	    	</div>
 	    	<div id="notebook-row" class="row">
 		    	<div class="col-md-6">
 		    		<div class="notebook-title">Analysis of podocyte transcriptional response following HIV infection</div>
-		    		<a href="#"><img id="hivan-image" class="notebook-image" src="img/hivan.png"></a>
+		    		<hr class="my-2" width="60%">
+		    		<div class="link-wrapper">
+			    		<a href="http://nbviewer.jupyter.org/github/MaayanLab/ppg-core/blob/master/hivan/HIVAN%20Report.ipynb"><img id="hivan-image" class="notebook-image" src="img/hivan.png"></a>
+		    		</div>
+		    		<div class="notebook-description">
+		    			By analyzing gene expression signatures of HIV-infected podocytes in two independent datasets, we uncovered several commonly altered biological pathways, including <b>TNF signaling</b>, <b>NF-kB signaling</b>, and a dysregulation of genes associated to the <b>Polycomb-group (PcG) family</b>.  Furthermore, we identify a number of candidate drugs which reproducibly reverse the HIV infection gene expression signature.
+		    		</div>
 		    	</div>
 		    	<div class="col-md-6">
 		    		<div class="notebook-title">BI-2536 as a candidate to reverse diabetic nephropathy signatures</div>
-		    		<a href="#"><img id="bi2536-image" class="notebook-image" src="img/bi2536.png"></a>
+		    		<hr class="my-2" width="60%">
+		    		<div class="link-wrapper">
+			    		<a href="http://nbviewer.jupyter.org/github/MaayanLab/ppg-core/blob/master/bi-2536/BI-2536%20Report.ipynb"><img id="bi2536-image" class="notebook-image" src="img/bi2536.png"></a>
+		    		</div>
+		    		<div class="notebook-description">
+			    		By integrating information across over 20 publicly available GEO transcriptomics datasets, we previously identified BI-2536 as a candidate drug to reverse diabetic nephropathy gene expression signatures.  In this notebook, we aim to investigate the biological effect of this drug by performing enrichment analysis of the commonly reversed genes. We find that it alters a number of key biological pathways, including <b>kidney epithelium development</b>, <b>steroid metabolism and signaling</b> and <b>inflammation</b>.
+		    		</div>
 		    	</div>
 	    	</div>
     	</div>
+    </div>
+    <div id="footer" class="text-center">
+    	<hr width="90%">
+		Developed by the <a href="http://icahn.mssm.edu/research/labs/maayan-laboratory">Ma'ayan Lab</a> at the <a href="http://icahn.mssm.edu/">Icahn School of Medicine at Mount Sinai</a>.
     </div>
 </body>
 </html>
